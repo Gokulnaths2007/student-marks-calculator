@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Student Marks Calculator</h1>
+        <p>Calculate your academic results easily</p>
+    </header>
+
+    <main class="container">
+        <section class="calculator-card">
+            <h2>Enter Student Details</h2>
+            <p class="description">
+                Enter your name and marks for all five subjects.
+            </p>
+
+            <form id="marksForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <h3>Subject Marks</h3>
+
+                <div class="form-group">
+                    <label for="mark1">Subject 1</label>
+                    <input type="number" id="mark1"
+                        min="0" max="100" step="any"
+                        placeholder="0 - 100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mark2">Subject 2</label>
+                    <input type="number" id="mark2"
+                        min="0" max="100" step="any"
+                        placeholder="0 - 100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mark3">Subject 3</label>
+                    <input type="number" id="mark3"
+                        min="0" max="100" step="any"
+                        placeholder="0 - 100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mark4">Subject 4</label>
+                    <input type="number" id="mark4"
+                        min="0" max="100" step="any"
+                        placeholder="0 - 100" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mark5">Subject 5</label>
+                    <input type="number" id="mark5"
+                        min="0" max="100" step="any"
+                        placeholder="0 - 100" required>
+                </div>
+
+                <button type="submit" class="calculate-btn">
+                    Calculate Result
+                </button>
+
+                <button type="reset" class="reset-btn">
+                    Clear All
+                </button>
+            </form>
+
+            <section id="result" class="result" hidden>
+                <h2>Student Result</h2>
+                <p id="resultName"></p>
+                <p id="resultTotal"></p>
+                <p id="resultAverage"></p>
+                <p id="resultPercentage"></p>
+                <p id="resultGrade"></p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student Marks Calculator | Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
